@@ -72,7 +72,7 @@ class AddressBook(UserDict):
         if name in self.data:
             del self.data[name]
         else:
-            raise ValueError(f"Record for {name} not found.")
+            raise ValueError(f"Рекорд для {name} не знайдено.")
 
     def __str__(self):
         return "\n".join(str(record) for record in self.data.values())
